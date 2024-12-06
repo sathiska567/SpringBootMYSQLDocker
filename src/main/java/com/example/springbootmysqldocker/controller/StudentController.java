@@ -20,6 +20,7 @@ public class StudentController {
 
     @PostMapping("/insert")
     public Student insert(@RequestBody Student student){
+
         return studentRepo.save(student);
     }
 }
